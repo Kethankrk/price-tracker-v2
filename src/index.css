@@ -5,9 +5,146 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255,255,255);
 }
-
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ...........................................  */
+           /* NAVIGATION BAR  */
+/* ...........................................  */
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  padding: 0 40px;
+  border-bottom: 1px solid rgb(190, 190, 190);
+  position: relative;
+}
+.nav-items{
+  display: flex;
+  width: 600px;
+  justify-content: space-evenly;
+}
+.nav-item{
+  list-style: none;
+}
+.link{
+  text-decoration: none;
+  color: rgb(109, 109, 109);
+  font-weight: 600;
+}
+
+.for-icon{
+  display: flex;
+  align-items: center;
+}
+
+.notification-bell{
+  width: 23px;
+  height: 23px;
+  margin-right: 15px;
+}
+.user-img{
+  margin-left: 15px;
+}
+
+.dropdown{
+  position: absolute;
+  right: 40px;
+  bottom: -10px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.user-img:hover + .dropdown{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+.container{
+  display: flex;
+  padding: 60px 100px;
+}
+
+.first-div{
+  width: 300px;
+  /* background-color: aqua; */
+}
+
+.my-income{
+  margin-bottom: 20px;
+}
+.income-name{
+  background-color: rgb(247,211,161);
+  padding-top: 35px;
+  padding-inline: 15px;
+  padding-bottom: 15px;
+  border-radius: 10px 10px 0px 0px;
+}
+.job-income-balance{
+  background-color: rgb(23,23,25);
+  padding: 15px;
+  color: white;
+  border-radius: 0px 0px 10px 10px; 
+}
+.job{
+  font-size: 18px;
+  margin-top: 4px;
+}
+.job-income-balance-amount{
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.source, .balance-head{
+  font-size: 10px;
+  font-weight: 600;
+}
+.from-income{
+  box-shadow: 0px 6px 6px rgb(151, 151, 151);
+  border-radius: 10px;
+}
+.from-investment{
+  background-color: whitesmoke;
+}
+
+.investment-name{
+  margin-top: 20px;
+  padding-top: 35px;
+  padding-inline: 15px;
+  padding-bottom: 15px;
+  border-inline: 1px solid rgb(116, 116, 116);
+  border-top: 1px solid rgb(116, 116, 116);
+  border-radius: 10px 10px 0px 0px;
+}
+.job-investment-balance{
+  padding: 15px;
+  border: 1px solid rgb(116, 116, 116);
+  border-radius: 0px 0px 10px 10px;
+}
+
+.my-profile-btn{
+  width: 100%;
+  padding: 10px 0px;
+  margin-top: 10px;
+  border: 1px solid rgb(116, 116, 116);
+  /* border-radius: 10px; */
+  font-size: 16px;
+  font-weight: 500;
+  background-color: white;
+}
+
+
