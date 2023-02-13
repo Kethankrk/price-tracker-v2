@@ -58,18 +58,6 @@ nav{
   margin-left: 15px;
 }
 
-.dropdown{
-  position: absolute;
-  right: 40px;
-  bottom: -10px;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.user-img:hover + .dropdown{
-  opacity: 1;
-  pointer-events: auto;
-}
 
 
 
@@ -146,5 +134,41 @@ nav{
   font-weight: 500;
   background-color: white;
 }
+.my-profile-btn:hover{
+  cursor: pointer;
+  padding: 9px 0px;
+  border: 2px solid rgb(116, 116, 116);
+  background-color: rgb(243, 243, 243);
+}
 
 
+
+
+.dropdown{
+  position: absolute;
+  right: 40px;
+  top: 80px;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 20px 10px;
+  height: 100px;
+  border-radius: 5px;
+}
+.dropdown-li{
+  list-style: none;
+}
+.dropdown-link{
+  margin-top: 20px;
+}
+
+
+
+.dashboard-select{
+  outline: 0px;
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  padding: 0px 5px;
+  font-size: 16px;
+
+}

@@ -31,7 +31,13 @@ export default function(){
                 <button className="my-profile-btn">Manage Income</button>
             </div>
             <div className="second-div">
-
+                <div className="stats-head">
+                    <select  id="" className="dashboard-select">
+                        <option className="option" value="">LAST WEEK</option>
+                        <option className="option" value="">LAST MONTH</option>
+                        <option className="option" value="">LAST YEAR</option>
+                    </select>
+                </div>
             </div>
         </section>
         </>
